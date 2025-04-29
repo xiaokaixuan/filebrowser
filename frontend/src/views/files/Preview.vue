@@ -256,10 +256,10 @@ export default {
 
       if (event.which === 13 || event.which === 39) {
         // right arrow
-        if (this.hasNext) this.next();
+        if (this.req.type != 'video' && this.hasNext) this.next();
       } else if (event.which === 37) {
         // left arrow
-        if (this.hasPrevious) this.prev();
+        if (this.req.type != 'video' && this.hasPrevious) this.prev();
       } else if (event.which === 27) {
         // esc
         this.close();
