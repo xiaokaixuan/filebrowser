@@ -794,6 +794,7 @@ export default {
       this.$store.commit("closeHovers");
     },
     windowsResize: throttle(function () {
+      if (!this.req.isDir) return;
       this.colunmsResize();
       this.width = window.innerWidth;
 
