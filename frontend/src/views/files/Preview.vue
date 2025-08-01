@@ -100,13 +100,34 @@
           @play="autoPlay = true"
         ></audio>
         <VideoPlayer
-          v-else-if="fileStore.req?.type == 'video'"
+          v-else-if="fileStore.req?.type == 'video' && !isMobile"
           ref="player"
           :source="previewUrl"
           :subtitles="subtitles"
           :options="videoOptions"
         >
         </VideoPlayer>
+        <video
+          v-else-if="fileStore.req?.type == 'video' && isMobile"
+          ref="player"
+          :src="previewUrl"
+          controls
+          :autoplay="autoPlay"
+          @play="autoPlay = true"
+        >
+          <track
+            kind="captions"
+            v-for="(sub, index) in subtitles"
+            :key="index"
+            :src="sub"
+            :label="'Subtitle ' + index"
+            :default="index === 0"
+          />
+          Sorry, your browser doesn't support embedded videos, but don't worry,
+          you can <a :href="downloadUrl">download it</a>
+          and watch it with your favorite video player!
+        </video>
+        
         <object v-else-if="isPdf" class="pdf" :data="previewUrl"></object>
         <div v-else-if="fileStore.req?.type == 'blob'" class="info">
           <div class="title">
@@ -282,6 +303,8 @@ const isEpub = computed(
 
 const isResizeEnabled = computed(() => resizePreview);
 
+const isMobile = computed(() => window.innerWidth <= 736);
+
 const subtitles = computed(() => {
   if (fileStore.req?.subtitles) {
     return api.getSubtitlesURL(fileStore.req);
@@ -349,10 +372,10 @@ const key = (event: KeyboardEvent) => {
   }
   if (event.which === 13 || event.which === 39) {
     // right arrow
-    if (hasNext.value) next();
+    if (fileStore.req?.type != 'video' && hasNext.value) next();
   } else if (event.which === 37) {
     // left arrow
-    if (hasPrevious.value) prev();
+    if (fileStore.req?.type != 'video' && hasPrevious.value) prev();
   } else if (event.which === 27) {
     // esc
     close();
