@@ -2,6 +2,85 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.44.0](https://github.com/filebrowser/filebrowser/compare/v2.43.0...v2.44.0) (2025-09-25)
+
+
+### Features
+
+* allow setting ace editor theme ([#3826](https://github.com/filebrowser/filebrowser/issues/3826)) ([b9787c7](https://github.com/filebrowser/filebrowser/commit/b9787c78f3889171f94db19e7655dce68c64b6fb))
+* Improved path display in the new file and directory modal ([#5451](https://github.com/filebrowser/filebrowser/issues/5451)) ([d29ad35](https://github.com/filebrowser/filebrowser/commit/d29ad356d1067c87b2821debab91286549f512a0))
+* Translate frontend/src/i18n/en.json in no ([dec7a02](https://github.com/filebrowser/filebrowser/commit/dec7a027378fbc6948d203199c44a640a141bcad))
+* Updates for project File Browser ([#5446](https://github.com/filebrowser/filebrowser/issues/5446)) ([4ff247e](https://github.com/filebrowser/filebrowser/commit/4ff247e134e4d61668ee656a258ed67f71414e18))
+* Updates for project File Browser ([#5450](https://github.com/filebrowser/filebrowser/issues/5450)) ([0eade71](https://github.com/filebrowser/filebrowser/commit/0eade717ce9d04bf48051922f11d983edbc7c2d0))
+* Updates for project File Browser ([#5457](https://github.com/filebrowser/filebrowser/issues/5457)) ([1165f00](https://github.com/filebrowser/filebrowser/commit/1165f00bd4dcb0dcfbc084f54f51902ba4b4a714))
+
+
+### Bug Fixes
+
+* computation of file path ([c472542](https://github.com/filebrowser/filebrowser/commit/c4725428e07da72b855009e2c13c6ed91d32e0b7))
+* show login when session token expires ([e6c674b](https://github.com/filebrowser/filebrowser/commit/e6c674b3c616831942c4d4aacab0907d58003e23))
+* some formatting issues with i18n files ([949ddff](https://github.com/filebrowser/filebrowser/commit/949ddffef20e38169902c5fd74dca4815dcecf11))
+* **upload:** throttle upload speed calculation to 100ms to avoid Infinity MB/s ([#5456](https://github.com/filebrowser/filebrowser/issues/5456)) ([692ca5e](https://github.com/filebrowser/filebrowser/commit/692ca5eaf01e4dcf346ba03f82c5dbd50cce246b))
+
+## [2.43.0](https://github.com/filebrowser/filebrowser/compare/v2.42.5...v2.43.0) (2025-09-13)
+
+
+### Features
+
+* "save changes" button to discard changes dialog ([84e8632](https://github.com/filebrowser/filebrowser/commit/84e8632b98e315bfef2da77dd7d1049daec99241))
+* Translate frontend/src/i18n/en.json in es ([571ce6c](https://github.com/filebrowser/filebrowser/commit/571ce6cb0d7c8725d1cc1a3238ea506ddc72b060))
+* Translate frontend/src/i18n/en.json in fr ([6b1fa87](https://github.com/filebrowser/filebrowser/commit/6b1fa87ad38ebbb1a9c5d0e5fc88ba796c148bcf))
+* Updates for project File Browser ([#5427](https://github.com/filebrowser/filebrowser/issues/5427)) ([8950585](https://github.com/filebrowser/filebrowser/commit/89505851414bfcee6b9ff02087eb4cec51c330f6))
+
+
+### Bug Fixes
+
+* optimize markdown preview height ([783503a](https://github.com/filebrowser/filebrowser/commit/783503aece7fca9e26f7e849b0e7478aba976acb))
+
+
+### Reverts
+
+* build(deps): bump github.com/ulikunitz/xz from 0.5.12 to 0.5.14 ([0769265](https://github.com/filebrowser/filebrowser/commit/07692653ffe0ea5e517e6dc1fd3961172e931843))
+
+
+### Build
+
+* **deps-dev:** bump vite from 6.1.6 to 6.3.6 in /frontend ([36c6cc2](https://github.com/filebrowser/filebrowser/commit/36c6cc203e10947439519a0413d5817921a1690d))
+* **deps:** bump github.com/go-viper/mapstructure/v2 in /tools ([280fa56](https://github.com/filebrowser/filebrowser/commit/280fa562a67824887ae6e2530a3b73739d6e1bb4))
+* **deps:** bump github.com/ulikunitz/xz from 0.5.12 to 0.5.14 ([950028a](https://github.com/filebrowser/filebrowser/commit/950028abebe2898bac4ecfd8715c0967246310cb))
+
+
+### Refactorings
+
+* to use strings.Lines ([b482a9b](https://github.com/filebrowser/filebrowser/commit/b482a9bf0d292ec6542d2145a4408971e4c985f1))
+
+## [2.43.0](https://github.com/filebrowser/filebrowser/compare/v2.42.5...v2.43.0) (2025-09-13)
+
+
+### Features
+
+* "save changes" button to discard changes dialog ([84e8632](https://github.com/filebrowser/filebrowser/commit/84e8632b98e315bfef2da77dd7d1049daec99241))
+* Translate frontend/src/i18n/en.json in es ([571ce6c](https://github.com/filebrowser/filebrowser/commit/571ce6cb0d7c8725d1cc1a3238ea506ddc72b060))
+* Translate frontend/src/i18n/en.json in fr ([6b1fa87](https://github.com/filebrowser/filebrowser/commit/6b1fa87ad38ebbb1a9c5d0e5fc88ba796c148bcf))
+* Updates for project File Browser ([#5427](https://github.com/filebrowser/filebrowser/issues/5427)) ([8950585](https://github.com/filebrowser/filebrowser/commit/89505851414bfcee6b9ff02087eb4cec51c330f6))
+
+
+### Bug Fixes
+
+* optimize markdown preview height ([783503a](https://github.com/filebrowser/filebrowser/commit/783503aece7fca9e26f7e849b0e7478aba976acb))
+
+
+### Build
+
+* **deps-dev:** bump vite from 6.1.6 to 6.3.6 in /frontend ([36c6cc2](https://github.com/filebrowser/filebrowser/commit/36c6cc203e10947439519a0413d5817921a1690d))
+* **deps:** bump github.com/go-viper/mapstructure/v2 in /tools ([280fa56](https://github.com/filebrowser/filebrowser/commit/280fa562a67824887ae6e2530a3b73739d6e1bb4))
+* **deps:** bump github.com/ulikunitz/xz from 0.5.12 to 0.5.14 ([950028a](https://github.com/filebrowser/filebrowser/commit/950028abebe2898bac4ecfd8715c0967246310cb))
+
+
+### Refactorings
+
+* to use strings.Lines ([b482a9b](https://github.com/filebrowser/filebrowser/commit/b482a9bf0d292ec6542d2145a4408971e4c985f1))
+
 ### [2.42.5](https://github.com/filebrowser/filebrowser/compare/v2.42.4...v2.42.5) (2025-08-16)
 
 
