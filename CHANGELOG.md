@@ -1,6 +1,74 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
+
+## [2.48.0](https://github.com/filebrowser/filebrowser/compare/v2.47.0...v2.48.0) (2025-11-17)
+
+
+### Features
+
+* consistent flags and environment variables ([#5549](https://github.com/filebrowser/filebrowser/issues/5549)) ([0a0cb80](https://github.com/filebrowser/filebrowser/commit/0a0cb8046fce52f1ff926171b34bcdb7cd39aab3))
+
+
+### Bug Fixes
+
+* add tokenExpirationTime to `config init` and troubleshoot docs ([#5546](https://github.com/filebrowser/filebrowser/issues/5546)) ([8c5dc76](https://github.com/filebrowser/filebrowser/commit/8c5dc7641e6f8aadd9e5d5d3b25a2ad9f1ec9a1e))
+* use all available flags in quick setup ([f41585f](https://github.com/filebrowser/filebrowser/commit/f41585f0392d65c08c01ab65b62d3eeb04c03b7d))
+
+
+### Refactorings
+
+* reuse logic for config init and set ([89be0b1](https://github.com/filebrowser/filebrowser/commit/89be0b1873527987dd2dddac746e93b8bc684d46))
+
+## [2.47.0](https://github.com/filebrowser/filebrowser/compare/v2.46.1...v2.47.0) (2025-11-16)
+
+
+### Features
+
+* add TUS settings to the command line ([#5556](https://github.com/filebrowser/filebrowser/issues/5556)) ([e24e1f1](https://github.com/filebrowser/filebrowser/commit/e24e1f1abae9e80add620c4ad65660ca1b575a49))
+* remove importer of v1 config ([#5550](https://github.com/filebrowser/filebrowser/issues/5550)) ([ceb5e72](https://github.com/filebrowser/filebrowser/commit/ceb5e723f3ee2c966bb561a804015246450280ca))
+
+
+### Bug Fixes
+
+* exit 0 when gracefully shutting down ([#5555](https://github.com/filebrowser/filebrowser/issues/5555)) ([5de4099](https://github.com/filebrowser/filebrowser/commit/5de4099cba2cf012d4a213c8eb29c412fc72c151))
+
+## [2.46.1](https://github.com/filebrowser/filebrowser/compare/v2.46.0...v2.46.1) (2025-11-15)
+
+
+### Bug Fixes
+
+* env key replacer and remove unused function ([#5547](https://github.com/filebrowser/filebrowser/issues/5547)) ([13814e1](https://github.com/filebrowser/filebrowser/commit/13814e11197ebd9101940883e3ca85998f86d442))
+* remove duplicated 'hide-defaults' flag (is 'hideDefaults') ([#5548](https://github.com/filebrowser/filebrowser/issues/5548)) ([ffc8504](https://github.com/filebrowser/filebrowser/commit/ffc850454e4cb8f10b970511681d6c627340afc7))
+
+## [2.46.0](https://github.com/filebrowser/filebrowser/compare/v2.45.3...v2.46.0) (2025-11-14)
+
+
+### Features
+
+* add 'hide-dotfiles' as command line parameter ([#3802](https://github.com/filebrowser/filebrowser/issues/3802)) ([0d973d3](https://github.com/filebrowser/filebrowser/commit/0d973d3aad70ceb88950f2cd9c297fc76e7955b1))
+* add context menu ([#3343](https://github.com/filebrowser/filebrowser/issues/3343)) ([1ace579](https://github.com/filebrowser/filebrowser/commit/1ace579a553486bb15af2d11f537414156606434))
+* add option to hide the login button from public-facing pages ([#3922](https://github.com/filebrowser/filebrowser/issues/3922)) ([ac7b49c](https://github.com/filebrowser/filebrowser/commit/ac7b49c1484b4e27a1149310542ccd1e90659ee2))
+* Updates for project File Browser ([#5544](https://github.com/filebrowser/filebrowser/issues/5544)) ([fb5d099](https://github.com/filebrowser/filebrowser/commit/fb5d099f8514516216f407be012d2e3f25de2441))
+
+## [2.45.3](https://github.com/filebrowser/filebrowser/compare/v2.45.2...v2.45.3) (2025-11-13)
+
+This is a test release to ensure the updated workflow works.
+
+## [2.45.2](https://github.com/filebrowser/filebrowser/compare/v2.45.1...v2.45.2) (2025-11-13)
+
+
+### Bug Fixes
+
+* **deps:** update module github.com/shirou/gopsutil/v3 to v4 ([#5536](https://github.com/filebrowser/filebrowser/issues/5536)) ([fdff7a3](https://github.com/filebrowser/filebrowser/commit/fdff7a38f4711f2b58dfdd60bebbb057bd3a478d))
+* **deps:** update module gopkg.in/yaml.v2 to v3 ([#5537](https://github.com/filebrowser/filebrowser/issues/5537)) ([f26a685](https://github.com/filebrowser/filebrowser/commit/f26a68587d8432b536453093f42dc255d19d10fa))
+
+### [2.45.1](https://github.com/filebrowser/filebrowser/compare/v2.45.0...v2.45.1) (2025-11-11)
+
+
+### Bug Fixes
+
+* share page preview items to contain baseUrl ([#5510](https://github.com/filebrowser/filebrowser/issues/5510)) ([6950c2e](https://github.com/filebrowser/filebrowser/commit/6950c2e4d2868f06235f93c0a18b303b4095ca0a))
 
 ## [2.45.0](https://github.com/filebrowser/filebrowser/compare/v2.44.2...v2.45.0) (2025-11-01)
 
