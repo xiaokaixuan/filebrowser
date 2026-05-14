@@ -161,10 +161,13 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 350px) {
   #listing.list .item .modified {
     display: none;
   }
+}
+
+@media (max-width: 450px) {
   #listing.list .item .name {
     width: 100%;
   }

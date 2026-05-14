@@ -23,7 +23,7 @@ export async function fetch(url: string, signal?: AbortSignal) {
   if (data.isDir) {
     if (!data.url.endsWith("/")) data.url += "/";
     // Perhaps change the any
-    data.items = data.items.map((item: any, index: any) => {
+    data.items = data.items.sort((a, b) => +!!b.isDir - +!!a.isDir).map((item: any, index: any) => {
       item.index = index;
       item.url = `${data.url}${encodeURIComponent(item.name)}`;
 
