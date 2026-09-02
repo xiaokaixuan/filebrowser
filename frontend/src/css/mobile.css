@@ -177,7 +177,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 350px) {
   #listing.list .item:not(.header) .modified {
     display: none;
   }

@@ -117,13 +117,33 @@
           @play="autoPlay = true"
         ></audio>
         <VideoPlayer
-          v-else-if="fileStore.req?.type == 'video'"
+          v-else-if="fileStore.req?.type == 'video' && !isMobile"
           ref="player"
           :source="previewUrl"
           :subtitles="subtitles"
           :options="videoOptions"
         >
         </VideoPlayer>
+        <video
+          v-else-if="fileStore.req?.type == 'video' && isMobile"
+          ref="player"
+          :src="previewUrl"
+          controls
+          :autoplay="autoPlay"
+          @play="autoPlay = true"
+        >
+          <track
+            kind="captions"
+            v-for="(sub, index) in subtitles"
+            :key="index"
+            :src="sub"
+            :label="'Subtitle ' + index"
+            :default="index === 0"
+          />
+          Sorry, your browser doesn't support embedded videos, but don't worry,
+          you can <a :href="downloadUrl">download it</a>
+          and watch it with your favorite video player!
+        </video>
         <object v-else-if="isPdf" class="pdf" :data="previewUrl"></object>
         <div v-else-if="fileStore.req?.type == 'blob'" class="info">
           <div class="title">
@@ -317,6 +337,7 @@ const isCsv = computed(
 );
 
 const isResizeEnabled = computed(() => resizePreview);
+const isMobile = computed(() => window.innerWidth <= 736);
 
 const subtitles = computed(() => {
   if (fileStore.req?.subtitles) {
